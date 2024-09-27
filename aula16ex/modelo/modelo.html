@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Contador de notas acadêmicas</h1>
+    </header>
+    <section>
+        <div>
+            Insira a nota (apenas valores entre 1 e 100 são aceitos)
+
+            <!--Botão e área para inserir o valor das notas-->
+            <input type="number" name="fnum" id="fnum">
+            <input type="button" value="Adicionar" onclick="adicionar()">
+
+            <!--Botão e área para inserir o valor da média necessária para aprovação-->
+            <input type="number" name="fmed" class="custom-input" id="fmed" onclick="vmedia()">
+            <input type="button" value="Inserir média" onclick="Addmedia">
+
+            <!--Zona em que vai aparecer a listagem das notas já inseridas-->
+            <br><br><select name="flista" id="flista" size="6"></select>
+            <br> <input type="button" value="Finalizar" onclick="finalizar()">
+
+        </div>
+        <div id="res">
+                  
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Bianca Letícia Homem
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
